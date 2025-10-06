@@ -54,9 +54,7 @@ define([
         initializeCaptcha: function (element, self) {
             const $container = $(element);
             const $form = $container.closest('form');
-
-            console.log(`Initializing Invisible Captcha for form:`, $form);
-
+            
             // Store reference for later use if API not loaded
             if (!captchaModel.isApiLoaded()) {
                 captchaModel.initializeForms.push({
